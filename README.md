@@ -1,2 +1,2 @@
-# Rambo3Page
-Giới thiệu, hướng dẫn cài đặt Game Rambo3
+# Website Chess Game Online 
+Website được xây dụng để giới thiệu và downloads Chess Game Online
