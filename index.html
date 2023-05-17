@@ -62,7 +62,7 @@ Mục tiêu của trò chơi là chiếm được quân Vua của đối phươn
 Trò chơi cờ vua là một trò chơi rất phổ biến và được coi là một môn thể thao trí tuệ. Nó đòi hỏi sự tập trung cao độ, tính toán kỹ lưỡng và khả năng dự đoán. Ngoài ra, trò chơi còn giúp phát triển trí nhớ, tăng cường khả năng tư duy logic và sáng tạo.
             
               <div class="button">
-                <button><i class="fa-brands fa-linux" style="margin-right: 12px;"></i><a href="ChessGameOnline-python.tar" style="color: white;"> Dành cho Linux</a></button>
+                <button><i class="fa-brands fa-linux" style="margin-right: 12px;"></i><a href="https://drive.google.com/uc?export=download&id=19UgFDLvwGokmdacLMXAETROmdNjK4TAq" style="color: white;"> Dành cho Linux</a></button>
               </div>
             </div>
           </div>
@@ -150,19 +150,20 @@ Trò chơi cờ vua là một trò chơi rất phổ biến và được coi là
           <div class="topic">Trên Linux</div>
           <ul class="cachchoi">
             <li> Bước 1: 
-              Một trong hai người chơi ấn đúp vào file server để chạy server
+              Chọn chế độ chơi Single hoặc 2Person
             </li>
             <li> Bước 2:
-              Cả hai người chơi ấn đúp vào file client để chạy cửa sổ trò chơi
+              Chọn Single: Trước mặt người chơi sẽ là màn hình cờ vua, người chơi đều có thể di chuyển quân trắng hoặc đen
+              Chọn 2Person: Người chơi trước hết phải nhấn vào "Create room" để tạo phòng trước và nhấn vào "Play random" để chơi với người chơi bất kỳ 
             </li>
             <li> Bước 3: 
-              Click vào cửa sổ trò chơi để xác nhận đã sẵn sàng
+              Nhấn vào 1 quân cờ nào đó thì nước đi của quân cờ đó sẽ hiển thị dưới dạng ô màu đỏ, người chơi sẽ nhấn giữ chuột trái và di chuyển quân cờ đến ô màu đỏ mình mong muốn, sau đó thả chuột thì quân cờ sẽ xuất hiện ở ô người chơi đã chọn
             </li>
             <li> Bước 4:
-              Nếu một trong hai người chơi chưa xác nhận sẵn sàng, sẽ phải chờ xác nhận
+              Người chơi có thể ăn quân cờ của đối phương nếu đối phương nằm trong phạm vi di chuyển quân cờ của người chơi
             </li>
             <li> Bước 5
-              Cả hai người chơi đều sẵn sàng, bắt đầu trò chơi
+              Người chơi sẽ chiến thắng nếu quân vua của đối phương không còn đường nào để đi
             </li> 
           </ul>
       </div>
@@ -186,20 +187,22 @@ Trò chơi cờ vua là một trò chơi rất phổ biến và được coi là
           <div class="topic" style="font-weight: bold;">Trên Linux</div>
           <ul class="cachchoi">
             <li> Bước 1: 
-              Chọn download dành cho linux ở phía trên, sẽ tải về file có tên Rambo3.tar
+              Chọn download dành cho linux ở phía trên, sẽ tải về file có tên ChessGameOnline-python.tar.gz
             </li>
             <li> Bước 2:
-              Vào thư mục chứa ChessGameOnline-python.tar, mở terminal
+              Vào thư mục Downloads, mở terminal
             </li>
             <li> Bước 3: 
               Thực hiện câu lệnh <br>
-              <code>tar -xvf ChessGameOnline-python.tar</code>
+              <code>tar -xzf ChessGameOnline-python.tar.gz</code>
             </li>
             <li> Bước 4:
-              Giải nén thành công, xuất hiện thư mục ...
+              Giải nén thành công, xuất hiện thư mục ChessGameOnline-python
             </li>
             <li> Bước 5
-              Click đúp vào thư mục, bắt đầu trò chơi
+              Thực hiện câu lệnh sau để chơi<br>
+              <code>cd ChessGameOnline-python <br>
+              <code>python3 main_menu.py</code>
             </li>
           </ul>
       </div>
@@ -216,8 +219,13 @@ Trò chơi cờ vua là một trò chơi rất phổ biến và được coi là
               Bước 1: Mở Terminal
             </li>
             <li> Bước 2: Bắt đầu cài đặt<br>
-              <code>sudo apt update <br>
-                sudo apt install python3</code>
+              Cài đặt python3 <br>
+              <code>sudo apt-get install python3 </code> <br>
+                Cài đặt pip <br>
+              <code>sudo apt-get install python3-pip </code><br>
+                Cài đặt pygame <br>
+              <code> pip install pygame
+              </code>
             </li>
             <li>
               Bước 3: Kiểm tra cài đặt
